@@ -132,7 +132,10 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     justify-content: center;
     align-items: center;
     margin: auto;
-
+    transition: 1s;
+}
+.iconocv:hover{
+    transform: scale(1.5);
 }
 .logocv{
     padding-top: 10px;
@@ -283,9 +286,34 @@ progress::-webkit-progress-bar {
     flex-direction: column;
     align-content: center;
  }
- .logosredescv i{font-size: 30px; padding: 15px; color: #F93CA0; margin-bottom: 20px;} 
-    
+ .logosredescv i{font-size: 30px; 
+    padding: 15px; 
+    color: #F93CA0; 
+    margin-bottom: 20px;
+    transition: 0.5s;
 
+} 
+    
+.fa-instagram:hover{
+    transform: scale(1.2);
+    color: #6e57a5;
+}
+.fa-facebook:hover{
+    transform: scale(1.2);
+    color: #6e57a5;
+}
+.fa-twitter:hover{
+    transform: scale(1.2);
+    color: #6e57a5;
+}
+.fa-youtube:hover{
+    transform: scale(1.2);
+    color: #6e57a5;
+}
+.fa-spotify:hover{
+    transform: scale(1.2);
+    color: #6e57a5;
+}
  
  .footercv{
     height: 50px;
