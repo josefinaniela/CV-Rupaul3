@@ -4,6 +4,7 @@ body { font-family: 'Libre Franklin', sans-serif;
     font-size: 15px;
 background-color: #B4FDE6;
 color: #F93CA0;
+margin: 0;
 }
 
 header {text-align: left; display: flex; flex-direction: column;
@@ -143,23 +144,77 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
 }
 
 #titulocv {
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.fi-rr-user{
+    color: #F93CA0;
+}
 .nombre {
-    
+    margin-bottom: 40px;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 60px;
+    width: 60%;
+    text-align: center;
+}
+
+.bio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.fa-user{
+    color: #F93CA0;
+    font-size: 30px;
+    padding-right: 15px;
+}
+.bio1{
+    display: flex;
+    align-items: center;
+}
+.fa-envelope{
+    color: #F93CA0;
+    font-size: 30px;
+    padding-right: 15px;
+}
+.bio2{
+    display: flex;
+    align-items: center;
+}
+.fa-phone{
+    color: #F93CA0;
+    font-size: 30px;
+    padding-right: 15px;
+}
+.bio3{
+    display: flex;
+    align-items: center;
+}
+.fa-map-pin{
+    color: #F93CA0;
+    font-size: 30px;
+    padding-right: 15px;
+}
+.bio4{
+    display: flex;
+    align-items: center;
+    
+}
+.fa-map-pin:hover{
+    transform: scale(1.2);
+    color: #6e57a5;
+    transition: 0.5s;
 }
 
 .descripcion {
-    text-align: center;
-    font-size: medium;
+    font-size: large;
     padding-bottom: 60px;
-    width: 60%;
-    
+    width: 40%;
+    padding-right: 50px;
+    padding-bottom: 0;
 }
 
 .separadorarriba{
@@ -167,7 +222,7 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     width: 60%; 
     height: 1px; 
     margin: auto; 
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 #primeralinea{
@@ -183,14 +238,22 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 15px;
     padding-bottom: 10px;
 
 }
+.formacioncontenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .formtitulo{
     padding-bottom: 15px;
+}
 
+.titulos{
+    text-align: left;
+    padding-left: 20px;
 }
 
 .formprogreso{
@@ -217,13 +280,19 @@ progress::-webkit-progress-bar {
     width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 15px;
     padding-bottom: 10px;
+}
+.discografiacontenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
 }
 
 .discos{
    padding-top: 15px;
+   text-align: left;
 }
 
 #segundalinea{
@@ -240,12 +309,16 @@ progress::-webkit-progress-bar {
     width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 15px;
     padding-bottom: 20px;
 
 }
-
+.premioscontenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
 .premios{
     padding-top: 15px;
  }
@@ -256,9 +329,14 @@ progress::-webkit-progress-bar {
     width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 15px;
     padding-bottom: 20px;
+}
+.filmografiacontenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
 }
 
 .film{
@@ -342,19 +420,34 @@ progress::-webkit-progress-bar {
         flex-direction: column;
         align-items: center;
     }
+    .formaciontitulo{
+        width: 80%;
+    }
     .discografiatitulo {
         margin-top: 30px;
+        width: 80%;
     }
     #segundalinea {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .premiostitulo{
+        width: 80%;
+    }
+    .premioscontenedor{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .premios{
+        text-align: center;
+    }
     .filmografiatitulo {
         margin-top: 30px;
+        width: 80%;
     }
     .redessociales {
-        width: 40%;
+        width: 80%;
     }
     .logosredescv {
         display: flex;
@@ -362,6 +455,31 @@ progress::-webkit-progress-bar {
     }
     .nombre {
         text-align: center;
+    }
+    .bio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .descripcion{
+        width: 80%;
+        padding: 0;
+        text-align: center;
+    }
+    .datos{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .bio1{
+        padding-right: 15px;
+    }
+    .bio3{
+        padding-right: 15px;
+    }
+    .biomobile{
+        display: flex;
+        justify-content: center;
     }
 }
 
