@@ -134,7 +134,11 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     align-items: center;
     margin: auto;
     transition: 1s;
+    animation-name: cararupaul;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;    
 }
+
 .iconocv:hover{
     transform: scale(1.5);
 }
@@ -142,6 +146,9 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     padding-top: 10px;
     width: 250px; 
 }
+
+
+
 
 #titulocv {
     margin-top: 70px;
@@ -158,6 +165,9 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     font-size: 60px;
     width: 60%;
     text-align: center;
+    animation-name: animacionfadein;
+    animation-duration: 2s;
+    
 }
 
 .bio{
@@ -180,14 +190,36 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     font-size: 30px;
     padding-right: 15px;
 }
+.fa-envelope:hover{
+    transform: scale(1.2);
+    color: #6e57a5;
+    transition: 0.5s;
+}
 .bio2{
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
 }
+.bio2 a{
+    text-decoration: none;
+    color: #F93CA0;
+}
+
+.bio3 a{
+    text-decoration: none;
+    color: #F93CA0;
+}
+
 .fa-phone{
     color: #F93CA0;
     font-size: 30px;
     padding-right: 15px;
+}
+
+.fa-phone:hover{
+    transform: scale(1.2);
+    color: #6e57a5;
+    transition: 0.5s;
 }
 .bio3{
     display: flex;
@@ -217,12 +249,32 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     padding-bottom: 0;
 }
 
+.renglon{
+    position: relative;
+}
 .separadorarriba{
     border-top: 1px solid grey; 
     width: 60%; 
     height: 1px; 
     margin: auto; 
     margin-bottom: 60px;
+   
+}
+.car img{
+    width: 100px;
+    margin: 0;
+    animation-name: auto;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.car{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+  transform: translate(-100%, -50%);
 }
 
 #primeralinea{
@@ -397,8 +449,52 @@ progress::-webkit-progress-bar {
     height: 50px;
  }
 
+ @keyframes animacionfadein{
+    0%{
+        transform:translateY(-100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+ }
+ @keyframes cararupaul{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+    
+ }
 
-@media screen and (min-width:0px) and (max-width:990px) {
+ @keyframes auto{
+
+    0%{
+        transform: translateX(0);
+        opacity: 0%;
+    }
+
+    5%{
+        opacity: 20%;
+    }
+
+    10%{
+        opacity: 100%;
+    }
+
+    100%{
+        transform: translateX(55vw);
+        
+    }
+ }
+
+
+@media screen and (min-width:420px) and (max-width:990px) {
 
     
     .logo {display: block;}
@@ -484,8 +580,79 @@ progress::-webkit-progress-bar {
 }
 
 
-@media screen and (min-width:991px) and (max-width:1200px) {
+@media screen and (min-width:0px) and (max-width:420px) {
     
+    .bio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    
+    .descripcion{
+        width: 80%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .bio1{
+        display: flex;
+        align-items: center;
+    }
+
+    .bio2{
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .bio3{
+        display: flex;
+        align-items: center;
+    }
+
+    .bio4{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    #primeralinea{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .formaciontitulo{
+        width: 80%;
+    }
+
+    .discografiatitulo{
+        margin-top: 30px;
+    width: 80%;
+    }
+
+    #segundalinea{
+        display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .premiostitulo{
+        width: 80%;
+    }
+
+    .filmografiatitulo{
+        margin-top: 30px;
+    width: 80%;
+    }
 }
 
 @media screen and (min-width:1201px) {
