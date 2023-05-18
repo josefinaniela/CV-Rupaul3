@@ -147,7 +147,11 @@ textarea {width: 90%; margin: 5px; background-color: #F93CA0; border-color: whit
     width: 250px; 
 }
 
-
+.logocv:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+    
+}
 
 
 #titulocv {
